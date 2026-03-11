@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>عيادة د. إيناس | أمراض الصدر والجهاز التنفسي — مستشفى الدمرداش — القاهرة</title>
+<meta name="description" content="دكتورة إيناس — استشارية أمراض الصدر والجهاز التنفسي بمستشفى الدمرداش بالقاهرة. خبرة واسعة في علاج أمراض الرئة والربو والدرن. احجز موعدك عبر الواتساب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+/* ════════════════════════════════════════
+   DESIGN SYSTEM — Medical Blue Palette
+════════════════════════════════════════ */
+:root {
+  /* Core palette */
+  --sky:    #4a90d9;   /* medical blue main */
+  --sky2:   #2d72bb;   /* deeper blue */
+  --sky3:   #1a5a9e;   /* accent blue */
+  --mist:   #daeaf8;   /* soft blue mist */
+  --mist2:  #edf5fc;   /* lighter mist */
+  --cream:  #f5f9fd;   /* cool cream bg */
+  --cream2: #eff6fb;   /* slightly deeper */
+  --linen:  #e8f2f9;   /* cool linen */
+  --white:  #ffffff;
+  --teal:   #3aacad;   /* teal accent */
+  --teal2:  #2a8e8f;
+
+  /* Text */
+  --ink:    #0d2240;   /* deep navy */
+  --ink2:   #1a3a60;
+  --txt:    #3a5878;
+  --txt2:   #6a88a8;
+  --txt3:   #a0b8d0;
+
+  /* Shadows */
+  --sh1: 0 2px 16px rgba(74,144,217,.10), 0 4px 24px rgba(13,34,64,.05);
+  --sh2: 0 8px 36px rgba(74,144,217,.16), 0 16px 48px rgba(13,34,64,.08);
+  --sh3: 0 16px 56px rgba(74,144,217,.22), 0 4px 20px rgba(13,34,64,.06);
+  --sh-blue: 0 10px 40px rgba(74,144,217,.40);
+  --sh-wa:   0 10px 36px rgba(37,211,102,.32);
+
+  /* Radii & spacing */
+  --r1: 12px;  --r2: 20px;  --r3: 32px;  --r4: 999px;
+  --tr: .42s cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  direction: rtl;
+  line-height: 1.75;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+  font-family: 'Amiri', 'Cairo', serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+}
+p { color: var(--txt); line-height: 1.95; }
+a { text-decoration: none; color: inherit; transition: var(--tr); }
+img { max-width: 100%; height: auto; display: block; }
+ul { list-style: none; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+
+/* ── Decorative ── */
+.sky-dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  background: var(--sky);
+  border-radius: 50%;
+}
+.wave-top  { display: block; width: 100%; margin-bottom: -2px; line-height: 0; }
+.wave-bottom { display: block; width: 100%; margin-top: -2px; line-height: 0; }
+
+/* ════════════════════════════════════════
+   NAVBAR
+════════════════════════════════════════ */
+.nav {
+  position: sticky; top: 0; z-index: 900;
+  background: rgba(245,249,253,.96);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(74,144,217,.15);
+  transition: box-shadow var(--tr);
+}
+.nav.up { box-shadow: var(--sh1); }
+.nav-inner {
+  max-width: 1180px; margin: 0 auto; padding: 0 28px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 70px;
+}
+.nav-brand { display: flex; align-items: center; gap: 12px; }
+.nav-logo {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, var(--sky), var(--sky2));
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 18px;
+  box-shadow: 0 4px 14px rgba(74,144,217,.35);
+  flex-shrink: 0;
+}
+.nav-name { font-size: 14px; font-weight: 800; color: var(--ink); display: block; line-height: 1.2; }
+.nav-spec { font-size: 11px; color: var(--sky2); font-weight: 600; display: block; }
+.nav-links { display: flex; align-items: center; gap: 2px; }
+.nav-links a {
+  padding: 8px 14px; border-radius: 50px;
+  font-size: 13px; font-weight: 700; color: var(--txt);
+  transition: var(--tr); display: flex; align-items: center; gap: 6px;
+}
+.nav-links a:hover, .nav-links a.act {
+  background: var(--mist2); color: var(--sky2);
+}
+.nav-cta {
+  background: linear-gradient(135deg, var(--sky), var(--sky2)) !important;
+  color: #fff !important;
+  box-shadow: var(--sh-blue) !important;
+  padding: 9px 22px !important;
+}
+.nav-cta:hover { transform: translateY(-2px) !important; filter: brightness(1.06) !important; }
+.ham {
+  display: none; flex-direction: column; gap: 5px;
+  cursor: pointer; padding: 8px; background: none; border: none; border-radius: 8px;
+}
+.ham span { display: block; width: 22px; height: 2px; background: var(--sky2); border-radius: 2px; transition: var(--tr); }
+
+/* ════════════════════════════════════════
+   HERO
+════════════════════════════════════════ */
+.hero {
+  background: linear-gradient(150deg, var(--white) 0%, var(--mist2) 45%, var(--mist) 100%);
+  position: relative; overflow: hidden;
+  padding-top: 40px;
+}
+.hero-blob {
+  position: absolute; border-radius: 50%;
+  pointer-events: none; animation: blob-float 9s ease-in-out infinite;
+}
+.blob-1 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(74,144,217,.18) 0%, transparent 70%);
+  top: -180px; left: -120px; animation-delay: 0s;
+}
+.blob-2 {
+  width: 420px; height: 420px;
+  background: radial-gradient(circle, rgba(58,172,173,.12) 0%, transparent 70%);
+  bottom: -100px; right: 0; animation-delay: -3.5s;
+}
+.blob-3 {
+  width: 260px; height: 260px;
+  background: radial-gradient(circle, rgba(74,144,217,.10) 0%, transparent 70%);
+  top: 35%; right: 35%; animation-delay: -6s;
+}
+@keyframes blob-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(12px, -18px) scale(1.03); }
+}
+.hero-dots {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(circle, rgba(74,144,217,.18) 1.2px, transparent 1.2px);
+  background-size: 36px 36px;
+  opacity: .5;
+}
+.hero-inner {
+  max-width: 1180px; margin: 0 auto; padding: 60px 28px 80px;
+  display: grid; grid-template-columns: 1.1fr .9fr;
+  gap: 60px; align-items: center; position: relative; z-index: 2;
+}
+.hero-pill {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #fff;
+  border: 1.5px solid rgba(74,144,217,.3);
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 12.5px; font-weight: 800; color: var(--sky2);
+  margin-bottom: 28px;
+  box-shadow: 0 4px 16px rgba(74,144,217,.12);
+  animation: fade-up .7s ease both;
+}
+.hero-pill-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--sky);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74,144,217,.5); }
+  50%       { box-shadow: 0 0 0 6px rgba(74,144,217,.0); }
+}
+.hero h1 {
+  font-size: clamp(2.5rem, 4.8vw, 3.8rem);
+  color: var(--ink);
+  line-height: 1.18;
+  margin-bottom: 20px;
+  animation: fade-up .75s .08s ease both;
+}
+.hero h1 .blue-word {
+  color: var(--sky2);
+  position: relative; display: inline-block;
+}
+.hero h1 .blue-word::after {
+  content: '';
+  position: absolute; bottom: -4px; right: 0; left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--sky), transparent);
+  border-radius: 2px;
+}
+.hero-sub {
+  font-size: 15.5px; color: var(--txt);
+  line-height: 2.1; max-width: 460px;
+  margin-bottom: 36px;
+  animation: fade-up .75s .16s ease both;
+}
+.hero-stats {
+  display: flex; gap: 0;
+  background: #fff;
+  border-radius: var(--r2);
+  overflow: hidden;
+  border: 1.5px solid rgba(74,144,217,.18);
+  box-shadow: var(--sh1);
+  margin-bottom: 36px;
+  animation: fade-up .75s .24s ease both;
+}
+.hstat {
+  flex: 1; padding: 18px 14px; text-align: center;
+  border-left: 1.5px solid rgba(74,144,217,.12);
+  transition: background .3s;
+}
+.hstat:last-child { border-left: none; }
+.hstat:hover { background: var(--mist2); }
+.hstat-n {
+  font-size: 1.8rem; font-weight: 900;
+  color: var(--sky2); line-height: 1; display: block;
+  font-family: 'Cairo', sans-serif;
+}
+.hstat-l { font-size: 11px; color: var(--txt2); margin-top: 4px; display: block; font-weight: 600; }
+.hero-btns {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  animation: fade-up .75s .32s ease both;
+}
+.hero-visual {
+  display: flex; justify-content: center; align-items: center;
+  position: relative;
+  animation: fade-scale .9s .2s ease both;
+}
+@keyframes fade-up   { from { opacity:0; transform: translateY(26px); } to { opacity:1; transform: translateY(0); } }
+@keyframes fade-scale { from { opacity:0; transform: scale(.88); }     to { opacity:1; transform: scale(1); } }
+.hero-frame { position: relative; width: 340px; }
+.hero-frame-img-wrap {
+  width: 100%; aspect-ratio: 3/4;
+  border-radius: 200px 200px 160px 160px;
+  overflow: hidden;
+  border: 4px solid var(--mist);
+  box-shadow: var(--sh2);
+  position: relative;
+}
+.hero-frame-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: top center;
+}
+.hero-frame-img-wrap::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(45,114,187,.12) 0%, transparent 50%);
+  border-radius: inherit;
+  pointer-events: none;
+}
+.hero-frame::before {
+  content: '';
+  position: absolute; inset: -14px;
+  border-radius: 210px 210px 170px 170px;
+  border: 2px dashed rgba(74,144,217,.28);
+  animation: spin-slow 22s linear infinite;
+  pointer-events: none;
+}
+@keyframes spin-slow { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+.hbadge {
+  position: absolute;
+  background: #fff; border-radius: var(--r2);
+  padding: 14px 18px; box-shadow: var(--sh2);
+  display: flex; align-items: center; gap: 12px;
+  border: 1.5px solid rgba(74,144,217,.12);
+  z-index: 3; animation: badge-bob 5s ease-in-out infinite;
+}
+.hbadge.b1 { bottom: 40px; left: -50px; animation-delay: 0s; }
+.hbadge.b2 { top: 50px; right: -44px; animation-delay: -2.5s; }
+@keyframes badge-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+.hbadge-icon {
+  width: 40px; height: 40px; border-radius: 12px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 18px;
+}
+.hbadge.b1 .hbadge-icon { background: var(--mist2); color: var(--sky2); }
+.hbadge.b2 .hbadge-icon { background: rgba(58,172,173,.12); color: var(--teal2); }
+.hbadge-t { font-size: 13px; font-weight: 800; color: var(--ink); line-height: 1.3; }
+.hbadge-s { font-size: 11px; color: var(--txt2); }
+
+/* ════════════════════════════════════════
+   BUTTONS
+════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+  padding: 13px 28px; border-radius: 50px;
+  font-family: 'Cairo', sans-serif; font-size: 14px; font-weight: 800;
+  cursor: pointer; border: none; transition: var(--tr);
+  text-decoration: none; white-space: nowrap; line-height: 1;
+}
+.btn-blue {
+  background: linear-gradient(135deg, var(--sky), var(--sky2));
+  color: #fff; box-shadow: var(--sh-blue);
+}
+.btn-blue:hover { transform: translateY(-3px); filter: brightness(1.07); color: #fff; box-shadow: 0 16px 44px rgba(74,144,217,.48); }
+.btn-wa {
+  background: linear-gradient(135deg, #2dc96d, #1a9952);
+  color: #fff; box-shadow: var(--sh-wa);
+}
+.btn-wa:hover { transform: translateY(-3px); color: #fff; filter: brightness(1.06); }
+.btn-ghost {
+  background: #fff; color: var(--sky2);
+  border: 2px solid rgba(74,144,217,.35); box-shadow: var(--sh1);
+}
+.btn-ghost:hover { border-color: var(--sky); background: var(--mist2); color: var(--sky2); }
+.btn-lg { padding: 16px 34px; font-size: 15px; }
+.btn-sm { padding: 9px 20px; font-size: 13px; }
+.btn-full { width: 100%; }
+
+/* ════════════════════════════════════════
+   TRUST STRIP
+════════════════════════════════════════ */
+.trust-strip {
+  background: linear-gradient(90deg, var(--sky2) 0%, var(--sky) 50%, var(--sky2) 100%);
+  padding: 14px 0; overflow: hidden;
+}
+.trust-items {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; flex-wrap: nowrap;
+}
+.trust-item {
+  display: flex; align-items: center; gap: 9px;
+  padding: 5px 28px;
+  border-left: 1px solid rgba(255,255,255,.2);
+  font-size: 13px; font-weight: 700; color: rgba(255,255,255,.9);
+  white-space: nowrap;
+}
+.trust-item:last-child { border-left: none; }
+.trust-item i { font-size: 15px; color: rgba(255,255,255,.8); }
+
+/* ════════════════════════════════════════
+   SECTION HEADER
+════════════════════════════════════════ */
+.sh { text-align: center; margin-bottom: 60px; }
+.sh-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 12px; font-weight: 800; letter-spacing: .6px;
+  color: var(--sky2); text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.sh-eyebrow::before, .sh-eyebrow::after {
+  content: ''; width: 32px; height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--sky));
+}
+.sh-eyebrow::before { background: linear-gradient(270deg, transparent, var(--sky)); }
+.sh h2 { font-size: clamp(1.9rem, 3vw, 2.7rem); margin-bottom: 14px; }
+.sh p { font-size: 15px; color: var(--txt); max-width: 480px; margin: 0 auto; }
+.sh-ornament {
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; margin-top: 20px;
+}
+.sh-ornament .line { flex: 1; max-width: 80px; height: 1.5px; background: linear-gradient(90deg, transparent, var(--sky)); }
+.sh-ornament .line.r { background: linear-gradient(270deg, transparent, var(--sky)); }
+.sh-ornament .diamond {
+  width: 8px; height: 8px;
+  background: var(--sky); transform: rotate(45deg);
+  box-shadow: 0 0 0 4px rgba(74,144,217,.2);
+}
+
+/* ════════════════════════════════════════
+   SERVICES
+════════════════════════════════════════ */
+.sec-srv {
+  padding: 96px 0;
+  background: var(--white);
+  position: relative;
+}
+.srv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.srv-card {
+  background: var(--cream);
+  border-radius: var(--r3);
+  overflow: hidden;
+  border: 1.5px solid rgba(74,144,217,.1);
+  transition: transform .45s cubic-bezier(.25,.8,.25,1), box-shadow .45s, border-color .3s;
+  position: relative;
+}
+.srv-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sh2);
+  border-color: rgba(74,144,217,.3);
+}
+.srv-card::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--sky), var(--sky2));
+  opacity: 0; transition: opacity .3s;
+}
+.srv-card:hover::after { opacity: 1; }
+.srv-card-img {
+  width: 100%; height: 180px;
+  object-fit: cover; display: block;
+  transition: transform .6s cubic-bezier(.25,.8,.25,1);
+}
+.srv-card:hover .srv-card-img { transform: scale(1.04); }
+.srv-card-body { padding: 28px 26px 30px; }
+.srv-icon {
+  width: 48px; height: 48px; border-radius: 14px;
+  background: var(--mist2); color: var(--sky2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; margin-bottom: 16px;
+  transition: background .3s;
+}
+.srv-card:hover .srv-icon { background: linear-gradient(135deg, var(--sky), var(--sky2)); color: #fff; }
+.srv-card-body h3 { font-size: 1.1rem; margin-bottom: 10px; }
+.srv-card-body p  { font-size: 13.5px; line-height: 1.95; color: var(--txt); }
+.srv-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 800; color: var(--sky2);
+  margin-top: 16px; transition: gap .3s;
+}
+.srv-link:hover { gap: 10px; }
+
+/* ════════════════════════════════════════
+   ABOUT
+════════════════════════════════════════ */
+.sec-about {
+  padding: 96px 0;
+  background: var(--cream2);
+  position: relative; overflow: hidden;
+}
+.about-deco-circle {
+  position: absolute; width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(74,144,217,.07) 0%, transparent 65%);
+  top: -120px; right: -80px; pointer-events: none;
+}
+.about-grid {
+  display: grid; grid-template-columns: .9fr 1.1fr;
+  gap: 80px; align-items: center;
+}
+.about-img-col { position: relative; }
+.about-corner-tl {
+  position: absolute; top: -14px; right: -14px;
+  width: 60px; height: 60px;
+  border-top: 3px solid var(--sky); border-right: 3px solid var(--sky);
+  border-radius: 0 12px 0 0; pointer-events: none;
+}
+.about-corner-br {
+  position: absolute; bottom: -14px; left: -14px;
+  width: 60px; height: 60px;
+  border-bottom: 3px solid var(--sky); border-left: 3px solid var(--sky);
+  border-radius: 0 0 12px 0; pointer-events: none;
+}
+.about-img-wrap {
+  border-radius: var(--r3);
+  overflow: hidden; position: relative;
+  box-shadow: var(--sh3);
+  border: 3px solid rgba(74,144,217,.15);
+}
+.about-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about-badge {
+  position: absolute; bottom: 24px; right: -24px;
+  background: #fff; border-radius: var(--r2);
+  padding: 16px 22px; box-shadow: var(--sh2);
+  border: 1.5px solid rgba(74,144,217,.15);
+  display: flex; align-items: center; gap: 14px;
+}
+.ab-icon {
+  width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0;
+  background: var(--mist2); color: var(--sky2);
+  display: flex; align-items: center; justify-content: center; font-size: 18px;
+}
+.ab-t { font-size: 13px; font-weight: 800; color: var(--ink); line-height: 1.3; }
+.ab-s { font-size: 11.5px; color: var(--txt2); margin-top: 2px; }
+.about-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 800; color: var(--sky2); letter-spacing: .5px; text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.about-text h2 { font-size: clamp(1.9rem, 3vw, 2.6rem); margin-bottom: 20px; }
+.about-text h2 span { color: var(--sky2); }
+.about-text > p { font-size: 15px; margin-bottom: 28px; }
+.feat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 32px; }
+.feat {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: #fff; border-radius: var(--r1); padding: 14px 16px;
+  border: 1.5px solid rgba(74,144,217,.1);
+  box-shadow: var(--sh1);
+  transition: var(--tr);
+}
+.feat:hover { border-color: rgba(74,144,217,.35); transform: translateX(-3px); }
+.feat-icon {
+  width: 34px; height: 34px; border-radius: 10px; flex-shrink: 0;
+  background: var(--mist2);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--sky2); font-size: 15px;
+}
+.feat-t { font-size: 13px; font-weight: 800; color: var(--ink); line-height: 1.3; }
+.feat-s { font-size: 11.5px; color: var(--txt2); margin-top: 2px; }
+.about-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ════════════════════════════════════════
+   STATS
+════════════════════════════════════════ */
+.sec-stats {
+  background: linear-gradient(135deg, var(--sky2) 0%, var(--sky) 60%, #5ba8e8 100%);
+  position: relative; overflow: hidden;
+}
+.sec-stats::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.stats-row {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  position: relative; z-index: 2;
+}
+.stat-item {
+  padding: 56px 24px; text-align: center;
+  border-left: 1px solid rgba(255,255,255,.15);
+  transition: background .3s;
+}
+.stat-item:last-child { border-left: none; }
+.stat-item:hover { background: rgba(255,255,255,.06); }
+.stat-n {
+  font-size: 3rem; font-weight: 900; color: #fff;
+  display: block; line-height: 1;
+  font-family: 'Cairo', sans-serif;
+  text-shadow: 0 2px 16px rgba(0,0,0,.1);
+}
+.stat-l {
+  font-size: 13.5px; color: rgba(255,255,255,.78);
+  display: block; margin-top: 8px; font-weight: 600;
+}
+
+/* ════════════════════════════════════════
+   TESTIMONIALS
+════════════════════════════════════════ */
+.sec-test {
+  padding: 96px 0;
+  background: var(--white);
+  position: relative;
+}
+.test-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 22px; align-items: start;
+}
+.test-card {
+  background: var(--cream);
+  border-radius: var(--r2);
+  padding: 32px 28px;
+  border: 1.5px solid rgba(74,144,217,.1);
+  position: relative; overflow: hidden;
+  transition: transform .42s, box-shadow .42s, border-color .3s;
+}
+.test-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--sh2);
+  border-color: rgba(74,144,217,.3);
+}
+.test-q {
+  position: absolute; top: 14px; left: 18px;
+  font-size: 5.5rem; color: rgba(74,144,217,.12);
+  font-family: Georgia, serif; line-height: 1;
+  user-select: none; pointer-events: none;
+}
+.test-stars { display: flex; gap: 3px; margin-bottom: 16px; }
+.test-stars i { color: #e8a030; font-size: 13px; }
+.test-txt {
+  font-size: 14px; color: var(--txt); line-height: 2;
+  font-style: italic; margin-bottom: 24px; position: relative;
+}
+.test-author { display: flex; align-items: center; gap: 14px; }
+.test-av {
+  width: 52px; height: 52px; border-radius: 50%;
+  overflow: hidden; flex-shrink: 0;
+  border: 3px solid var(--mist);
+  box-shadow: 0 4px 12px rgba(74,144,217,.2);
+}
+.test-av img { width: 100%; height: 100%; object-fit: cover; }
+.test-name { font-size: 14px; font-weight: 800; color: var(--ink); }
+.test-role { font-size: 12px; color: var(--txt2); margin-top: 2px; }
+.test-card:nth-child(2) { margin-top: 36px; }
+.test-card.c1::before { content:''; position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--sky2),var(--sky)); }
+.test-card.c3::before { content:''; position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--teal2),var(--teal)); }
+
+/* ════════════════════════════════════════
+   BOOKING
+════════════════════════════════════════ */
+.sec-booking {
+  padding: 96px 0;
+  background: linear-gradient(170deg, var(--mist2) 0%, var(--mist) 60%, var(--cream2) 100%);
+  position: relative; overflow: hidden;
+}
+.sec-booking::before {
+  content: '';
+  position: absolute;
+  width: 700px; height: 700px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(74,144,217,.14) 0%, transparent 65%);
+  bottom: -280px; left: -140px; pointer-events: none;
+}
+.booking-grid {
+  display: grid; grid-template-columns: 1fr 1.1fr;
+  gap: 64px; align-items: center; position: relative; z-index: 2;
+}
+.booking-info h2 { font-size: clamp(2rem, 3vw, 2.7rem); margin-bottom: 16px; }
+.booking-info h2 span { color: var(--sky2); }
+.booking-info > p { font-size: 15px; margin-bottom: 32px; }
+.bk-item {
+  display: flex; gap: 16px; align-items: center;
+  background: #fff; border-radius: var(--r2);
+  padding: 18px 22px; margin-bottom: 14px;
+  box-shadow: var(--sh1);
+  border: 1.5px solid rgba(74,144,217,.08);
+  transition: var(--tr);
+}
+.bk-item:hover { transform: translateX(-4px); border-color: rgba(74,144,217,.3); box-shadow: var(--sh2); }
+.bk-icon {
+  width: 46px; height: 46px; border-radius: 14px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 18px;
+}
+.bk-icon.blue  { background: var(--mist2); color: var(--sky2); }
+.bk-icon.wa    { background: rgba(37,211,102,.1); color: #1a9952; }
+.bk-icon.gold  { background: rgba(220,180,100,.12); color: #c49a30; }
+.bk-title { font-size: 14px; font-weight: 800; color: var(--ink); }
+.bk-val   { font-size: 13px; color: var(--txt2); margin-top: 2px; }
+.bk-val a { color: var(--sky2); font-weight: 700; }
+.qform-card {
+  background: #fff; border-radius: var(--r3);
+  padding: 40px; box-shadow: var(--sh2);
+  border: 1.5px solid rgba(74,144,217,.12);
+  position: relative; overflow: hidden;
+}
+.qform-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--sky), var(--sky2), #5ba8e8);
+}
+.qf-title { font-size: 1.2rem; font-weight: 800; color: var(--ink); margin-bottom: 4px; }
+.qf-sub   { font-size: 13px; color: var(--txt2); margin-bottom: 26px; }
+.fg { margin-bottom: 18px; }
+.fl {
+  display: block; font-size: 12.5px; font-weight: 700;
+  color: var(--txt2); margin-bottom: 7px;
+}
+.fl .req { color: var(--sky2); }
+.fi {
+  width: 100%; padding: 13px 17px;
+  border: 2px solid rgba(74,144,217,.18);
+  border-radius: var(--r1);
+  font-family: 'Cairo', sans-serif; font-size: 14px;
+  color: var(--ink); background: var(--cream);
+  outline: none; transition: border .3s, box-shadow .3s, background .3s;
+  direction: rtl; -webkit-appearance: none;
+}
+.fi:focus {
+  border-color: var(--sky);
+  box-shadow: 0 0 0 4px rgba(74,144,217,.12);
+  background: #fff;
+}
+.fi::placeholder { color: var(--txt3); }
+
+/* ════════════════════════════════════════
+   LOCATION
+════════════════════════════════════════ */
+.sec-loc {
+  padding: 96px 0;
+  background: var(--cream2);
+}
+.loc-layout {
+  display: grid; grid-template-columns: 320px 1fr;
+  gap: 24px; align-items: stretch;
+}
+.loc-cards { display: flex; flex-direction: column; gap: 14px; }
+.loc-card {
+  background: #fff; border-radius: var(--r2);
+  padding: 22px; display: flex; gap: 14px; align-items: flex-start;
+  box-shadow: var(--sh1); border: 1.5px solid rgba(74,144,217,.08);
+  transition: var(--tr);
+}
+.loc-card:hover { transform: translateX(-4px); box-shadow: var(--sh2); border-color: rgba(74,144,217,.25); }
+.loc-ic {
+  width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 17px;
+}
+.loc-ic.blue  { background: var(--mist2); color: var(--sky2); }
+.loc-ic.teal  { background: rgba(58,172,173,.1); color: var(--teal2); }
+.loc-ic.gold  { background: rgba(220,180,100,.12); color: #c49a30; }
+.loc-ic.green { background: rgba(37,211,102,.1); color: #1a9952; }
+.loc-ct { font-size: 13px; font-weight: 800; color: var(--ink); margin-bottom: 4px; }
+.loc-cv { font-size: 13px; color: var(--txt); line-height: 1.7; }
+.loc-cv a { color: var(--sky2); font-weight: 700; }
+.loc-map-wrap {
+  border-radius: var(--r3); overflow: hidden;
+  box-shadow: var(--sh2); position: relative;
+  border: 2px solid rgba(74,144,217,.12);
+  min-height: 440px;
+}
+.loc-map-wrap iframe { width: 100%; height: 100%; display: block; border: none; filter: saturate(.9) hue-rotate(-5deg); }
+.loc-map-footer {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 16px 22px;
+  background: linear-gradient(0deg, rgba(245,249,253,.94), transparent);
+  display: flex; gap: 10px;
+}
+
+/* ════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════ */
+.ft {
+  background: var(--ink);
+  padding: 68px 0 0;
+}
+.ft-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 44px; margin-bottom: 52px;
+}
+.ft-brand { display: flex; align-items: center; gap: 13px; margin-bottom: 18px; }
+.ft-logo {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, var(--sky), var(--sky2));
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 17px; flex-shrink: 0;
+}
+.ft-name { color: #fff; font-size: 14px; font-weight: 800; display: block; line-height: 1.2; }
+.ft-spec { color: var(--sky); font-size: 11px; display: block; }
+.ft-desc { font-size: 13.5px; color: rgba(255,255,255,.42); line-height: 1.95; margin-bottom: 22px; }
+.ft-social { display: flex; gap: 10px; }
+.ft-social a {
+  width: 38px; height: 38px; border-radius: 12px;
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,.45); font-size: 14px;
+  transition: var(--tr);
+}
+.ft-social a:hover { background: var(--sky2); color: #fff; border-color: var(--sky2); }
+.ft-col-h {
+  font-size: 13px; font-weight: 800; color: #fff;
+  padding-bottom: 12px; margin-bottom: 18px;
+  border-bottom: 1.5px solid rgba(74,144,217,.2);
+}
+.ft-links li + li { margin-top: 10px; }
+.ft-links a {
+  font-size: 13px; color: rgba(255,255,255,.42);
+  display: flex; align-items: center; gap: 8px; transition: var(--tr);
+}
+.ft-links a i { font-size: 9px; color: var(--sky); }
+.ft-links a:hover { color: var(--sky); padding-right: 4px; }
+.ft-ci { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.ft-ci .ic { color: var(--sky); font-size: 12px; margin-top: 4px; flex-shrink: 0; }
+.ft-ci span, .ft-ci a { font-size: 13px; color: rgba(255,255,255,.42); line-height: 1.7; }
+.ft-bottom {
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 22px 0;
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 12.5px; color: rgba(255,255,255,.22);
+  flex-wrap: wrap; gap: 10px;
+}
+
+/* ════════════════════════════════════════
+   FLOATS
+════════════════════════════════════════ */
+.wa-float {
+  position: fixed; bottom: 28px; left: 28px;
+  width: 58px; height: 58px;
+  background: linear-gradient(135deg, #2dc96d, #1a9952);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 26px; z-index: 980;
+  box-shadow: var(--sh-wa);
+  transition: transform .3s;
+  animation: wa-glow 3.5s ease-in-out infinite;
+}
+.wa-float:hover { transform: scale(1.12); color: #fff; }
+@keyframes wa-glow {
+  0%,100% { box-shadow: var(--sh-wa); }
+  50%      { box-shadow: 0 8px 36px rgba(37,211,102,.55), 0 0 0 8px rgba(37,211,102,.1); }
+}
+.btt {
+  position: fixed; bottom: 100px; left: 28px;
+  width: 42px; height: 42px;
+  background: var(--sky2); color: #fff;
+  border: none; border-radius: 12px;
+  cursor: pointer; font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity .3s, transform .3s;
+  z-index: 979; box-shadow: 0 4px 16px rgba(74,144,217,.35);
+}
+.btt.show { opacity: 1; pointer-events: auto; }
+.btt:hover { transform: translateY(-3px); }
+
+/* Toast */
+.toast-el {
+  position: fixed; top: 84px; left: 50%;
+  transform: translateX(-50%) translateY(-16px);
+  background: #fff;
+  border: 1.5px solid rgba(74,144,217,.2);
+  border-radius: var(--r1);
+  padding: 14px 22px; box-shadow: var(--sh3);
+  display: flex; align-items: center; gap: 12px;
+  z-index: 2000; opacity: 0;
+  transition: all .42s cubic-bezier(.34,1.56,.64,1);
+  min-width: 260px;
+}
+.toast-el.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.toast-el span { font-size: 14px; font-weight: 700; color: var(--ink); }
+
+/* ════════════════════════════════════════
+   SCROLL REVEAL
+════════════════════════════════════════ */
+.rv   { opacity:0; transform:translateY(32px); transition:opacity .7s ease, transform .7s ease; }
+.rv-r { opacity:0; transform:translateX(-32px); transition:opacity .75s ease, transform .75s ease; }
+.rv-l { opacity:0; transform:translateX(32px);  transition:opacity .75s ease, transform .75s ease; }
+.rv-s { opacity:0; transform:scale(.93);        transition:opacity .65s ease, transform .65s ease; }
+.rv.show,.rv-r.show,.rv-l.show,.rv-s.show { opacity:1; transform:none; }
+.d1{transition-delay:.07s} .d2{transition-delay:.14s} .d3{transition-delay:.22s}
+.d4{transition-delay:.30s} .d5{transition-delay:.38s} .d6{transition-delay:.46s}
+
+/* ════════════════════════════════════════
+   RESPONSIVE
+════════════════════════════════════════ */
+@media (max-width: 1060px) {
+  .hero-inner { grid-template-columns: 1fr; text-align: center; }
+  .hero-sub { margin: 0 auto 36px; }
+  .hero-stats { max-width: 440px; margin: 0 auto 36px; }
+  .hero-btns { justify-content: center; }
+  .hero-visual { margin: 0 auto; }
+  .hero-frame { width: 300px; }
+  .hbadge { display: none; }
+  .about-grid { grid-template-columns: 1fr; gap: 56px; }
+  .about-img-wrap { max-width: 340px; margin: 0 auto; }
+  .about-badge { left: 0; right: 0; bottom: -20px; max-width: 250px; margin: 0 auto; }
+  .booking-grid { grid-template-columns: 1fr; }
+  .loc-layout { grid-template-columns: 1fr; }
+  .ft-grid { grid-template-columns: 1fr 1fr; }
+  .nav-links {
+    display: none; position: absolute; top: 70px;
+    right: 0; left: 0;
+    background: rgba(245,249,253,.98);
+    flex-direction: column; padding: 14px 18px;
+    box-shadow: var(--sh2);
+    border-bottom: 1px solid rgba(74,144,217,.12);
+    backdrop-filter: blur(20px);
+  }
+  .nav-links.open { display: flex; }
+  .ham { display: flex; }
+}
+@media (max-width: 768px) {
+  .srv-grid { grid-template-columns: 1fr 1fr; }
+  .stats-row { grid-template-columns: 1fr 1fr; }
+  .test-grid { grid-template-columns: 1fr; }
+  .test-card:nth-child(2) { margin-top: 0; }
+  .feat-grid { grid-template-columns: 1fr; }
+  .ft-grid { grid-template-columns: 1fr; }
+  .trust-items { flex-wrap: wrap; }
+}
+@media (max-width: 520px) {
+  .srv-grid { grid-template-columns: 1fr; }
+  .hstat-n { font-size: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <div class="nav-logo"><i class="fas fa-lungs"></i></div>
+      <div>
+        <span class="nav-name">د. إيناس</span>
+        <span class="nav-spec">أمراض الصدر والجهاز التنفسي</span>
+      </div>
+    </a>
+    <nav class="nav-links" id="nbLinks">
+      <a href="#" class="act">الرئيسية</a>
+      <a href="#about">عن الدكتورة</a>
+      <a href="#services">الخدمات</a>
+      <a href="#testimonials">آراء المرضى</a>
+      <a href="#contact">اتصل بنا</a>
+      <a href="#booking" class="nav-cta">
+        <i class="fas fa-calendar-plus"></i> احجز موعدك
+      </a>
+    </nav>
+    <button class="ham" id="hamBtn" aria-label="قائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-pill">
+        <div class="hero-pill-dot"></div>
+        استشارية أمراض الصدر والتنفس
+      </div>
+      <h1>
+        رعاية متخصصة<br>
+        من قلب <span class="blue-word">الدمرداش</span>
+      </h1>
+      <p class="hero-sub">
+        الدكتورة إيناس — استشارية أمراض الصدر والجهاز التنفسي بمستشفى الدمرداش بالقاهرة.
+        تشخيص دقيق وعلاج شامل لكل أمراض الرئة والربو والجهاز التنفسي بأعلى مستوى من الكفاءة.
+      </p>
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-n"><span data-to="8000" data-sfx="+">٠</span></span>
+          <span class="hstat-l">حالة مُعالَجة</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-n"><span data-to="15" data-sfx="+">٠</span></span>
+          <span class="hstat-l">سنة خبرة</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-n"><span data-to="3000" data-sfx="+">٠</span></span>
+          <span class="hstat-l">منظار قصبي</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-n"><span data-to="97" data-sfx="٪">٠</span></span>
+          <span class="hstat-l">رضا المرضى</span>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#booking" class="btn btn-blue btn-lg">
+          <i class="fas fa-calendar-plus"></i> احجز موعدك الآن
+        </a>
+        <a href="https://wa.me/201121334408?text=مرحباً%20دكتورة%20إيناس،%20أريد%20الاستفسار" target="_blank" class="btn btn-wa btn-lg">
+          <i class="fab fa-whatsapp"></i> واتساب مباشر
+        </a>
+      </div>
+    </div>
+
+    <!-- Visual -->
+    <div class="hero-visual">
+      <div class="hero-frame">
+        <div class="hero-frame-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=680&h=900&q=88&crop=faces,top"
+            alt="دكتورة إيناس — استشارية أمراض الصدر بمستشفى الدمرداش"
+            loading="eager"
+            onerror="this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=680&h=900&q=85'">
+        </div>
+        <div class="hbadge b1">
+          <div class="hbadge-icon"><i class="fas fa-lungs"></i></div>
+          <div>
+            <div class="hbadge-t">+٨٠٠٠ مريض</div>
+            <div class="hbadge-s">تم علاجهم بنجاح</div>
+          </div>
+        </div>
+        <div class="hbadge b2">
+          <div class="hbadge-icon"><i class="fas fa-hospital"></i></div>
+          <div>
+            <div class="hbadge-t">مستشفى الدمرداش</div>
+            <div class="hbadge-s">القاهرة</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TRUST STRIP ══════════════ -->
+<div class="trust-strip">
+  <div class="trust-items">
+    <div class="trust-item"><i class="fas fa-user-md"></i> استشارية معتمدة</div>
+    <div class="trust-item"><i class="fas fa-hospital"></i> مستشفى الدمرداش — القاهرة</div>
+    <div class="trust-item"><i class="fas fa-clock"></i> ٦ أيام أسبوعياً</div>
+    <div class="trust-item"><i class="fas fa-map-marker-alt"></i> القاهرة — مصر</div>
+    <div class="trust-item"><i class="fab fa-whatsapp"></i> واتساب مباشر</div>
+    <div class="trust-item"><i class="fas fa-graduation-cap"></i> نقابة الأطباء المصريين</div>
+  </div>
+</div>
+
+<!-- ══════════════ SERVICES ══════════════ -->
+<section class="sec-srv" id="services">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sh-eyebrow"><i class="fas fa-stethoscope"></i> خدماتنا الطبية</div>
+      <h2>رعاية شاملة لصحة الجهاز التنفسي</h2>
+      <p>نقدم طيفاً واسعاً من خدمات أمراض الصدر والرئة بأعلى معايير الجودة والدقة التشخيصية</p>
+      <div class="sh-ornament">
+        <div class="line"></div>
+        <div class="diamond"></div>
+        <div class="line r"></div>
+      </div>
+    </div>
+    <div class="srv-grid">
+
+      <div class="srv-card rv d1">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="الربو والحساسية" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-wind"></i></div>
+          <h3>الربو وحساسية الصدر</h3>
+          <p>تشخيص وعلاج الربو القصبي وحساسية الصدر باستخدام أحدث البروتوكولات العلاجية لضمان حياة أفضل.</p>
+          <a href="#booking" class="srv-link">احجز موعداً <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv d2">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="أمراض الرئة" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-lungs-virus"></i></div>
+          <h3>أمراض الرئة المزمنة (COPD)</h3>
+          <p>تشخيص وإدارة الانسداد الرئوي المزمن والأمراض التنفسية الانسدادية بخطط علاجية متكاملة.</p>
+          <a href="#booking" class="srv-link">احجز موعداً <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv d3">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1530026405186-ed1f139313f3?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="الدرن والتهاب الرئة" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-bacteria"></i></div>
+          <h3>الدرن والتهابات الرئة</h3>
+          <p>تشخيص ومعالجة مرض السل الرئوي والتهابات الرئة البكتيرية والفيروسية بدقة وفاعلية عالية.</p>
+          <a href="#booking" class="srv-link">احجز موعداً <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv d4">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="التنظير القصبي" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-search"></i></div>
+          <h3>التنظير القصبي (المنظار)</h3>
+          <p>إجراء تنظير القصبات الهوائية للتشخيص والعلاج بأعلى درجات الدقة والأمان في مستشفى الدمرداش.</p>
+          <a href="#booking" class="srv-link">احجز موعداً <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv d5">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="انقطاع التنفس أثناء النوم" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-bed"></i></div>
+          <h3>انقطاع التنفس أثناء النوم</h3>
+          <p>تشخيص وعلاج متلازمة انقطاع التنفس أثناء النوم لضمان نوم هانئ وجودة حياة أفضل.</p>
+          <a href="#booking" class="srv-link">احجز موعداً <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv d6">
+        <img class="srv-card-img"
+          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=700&h=220&q=80"
+          alt="التليف الرئوي" loading="lazy">
+        <div class="srv-card-body">
+          <div class="srv-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>التليف الرئوي والأورام</h3>
+          <p>تشخيص ومتابعة التليف الرئوي والكتل الرئوية المشبوهة مع وضع خطط علاجية متخصصة ومتابعة دورية.</p>
+          <a href="#booking" class="srv-link">احجز موعداً <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:48px" class="rv">
+      <a href="#booking" class="btn btn-ghost">
+        <i class="fas fa-th-large"></i> احجز استشارتك الآن
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section class="sec-about" id="about">
+  <div class="about-deco-circle"></div>
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-col rv-r">
+        <div class="about-corner-tl"></div>
+        <div class="about-corner-br"></div>
+        <div class="about-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=560&h=700&q=88&crop=top"
+            alt="دكتورة إيناس — أمراض الصدر"
+            loading="lazy"
+            onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=560&h=700&q=85'">
+        </div>
+        <div class="about-badge">
+          <div class="ab-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <div class="ab-t">استشارية أمراض الصدر</div>
+            <div class="ab-s">مستشفى الدمرداش — القاهرة</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text rv-l">
+        <div class="about-eyebrow">
+          <i class="fas fa-user-md"></i> عن الدكتورة إيناس
+        </div>
+        <h2>خبرة طبية راسخة في <span>أمراض الصدر</span></h2>
+        <p>
+          الدكتورة إيناس استشارية متخصصة في أمراض الصدر والجهاز التنفسي بمستشفى الدمرداش بالقاهرة.
+          تمتلك خبرة واسعة تمتد لأكثر من ١٥ عاماً في تشخيص وعلاج طيف واسع من أمراض الرئة والقصبات الهوائية،
+          مع التزام تام بأعلى معايير الرعاية الطبية والإنسانية.
+        </p>
+        <div class="feat-grid">
+          <div class="feat">
+            <div class="feat-icon"><i class="fas fa-lungs"></i></div>
+            <div>
+              <div class="feat-t">تخصص دقيق</div>
+              <div class="feat-s">أمراض الصدر والرئة</div>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon"><i class="fas fa-hospital-alt"></i></div>
+            <div>
+              <div class="feat-t">مستشفى الدمرداش</div>
+              <div class="feat-s">القاهرة، مصر</div>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon"><i class="fas fa-microscope"></i></div>
+            <div>
+              <div class="feat-t">منظار قصبي</div>
+              <div class="feat-s">+٣٠٠٠ إجراء ناجح</div>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <div class="feat-t">رعاية آمنة</div>
+              <div class="feat-s">بأعلى المعايير الطبية</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-btns">
+          <a href="#booking" class="btn btn-blue">
+            <i class="fas fa-calendar-plus"></i> احجز موعدك
+          </a>
+          <a href="https://wa.me/201121334408?text=مرحباً%20دكتورة%20إيناس،%20أريد%20الاستفسار" target="_blank" class="btn btn-wa">
+            <i class="fab fa-whatsapp"></i> تواصل عبر الواتساب
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ STATS ══════════════ -->
+<section class="sec-stats">
+  <div class="wrap">
+    <div class="stats-row">
+      <div class="stat-item rv d1">
+        <span class="stat-n" data-to="8000" data-sfx="+">٠</span>
+        <span class="stat-l">حالة معالجة بنجاح</span>
+      </div>
+      <div class="stat-item rv d2">
+        <span class="stat-n" data-to="15" data-sfx="+">٠</span>
+        <span class="stat-l">سنة خبرة طبية</span>
+      </div>
+      <div class="stat-item rv d3">
+        <span class="stat-n" data-to="3000" data-sfx="+">٠</span>
+        <span class="stat-l">منظار قصبي</span>
+      </div>
+      <div class="stat-item rv d4">
+        <span class="stat-n" data-to="97" data-sfx="٪">٠</span>
+        <span class="stat-l">رضا المرضى</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TESTIMONIALS ══════════════ -->
+<section class="sec-test" id="testimonials">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sh-eyebrow"><i class="fas fa-star"></i> آراء مرضانا</div>
+      <h2>ماذا يقول مرضانا عن الدكتورة إيناس؟</h2>
+      <p>ثقة الآلاف من المرضى في القاهرة ومن مختلف أنحاء مصر هي مصدر فخرنا الأكبر</p>
+      <div class="sh-ornament">
+        <div class="line"></div>
+        <div class="diamond"></div>
+        <div class="line r"></div>
+      </div>
+    </div>
+    <div class="test-grid">
+
+      <div class="test-card c1 rv d1">
+        <div class="test-q">"</div>
+        <div class="test-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="test-txt">
+          عانيت من الربو لسنوات طويلة وزرت دكاترة كثيرين. مع دكتورة إيناس أخيراً حسيت بفرق حقيقي، تشخيصها دقيق جداً والخطة العلاجية غيرت حياتي للأفضل.
+        </p>
+        <div class="test-author">
+          <div class="test-av"><img src="https://ui-avatars.com/api/?name=أحمد+محمد&background=4a90d9&color=fff&size=52" alt="أحمد"></div>
+          <div>
+            <div class="test-name">أحمد محمد</div>
+            <div class="test-role">مريض ربو — القاهرة</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-card rv d2">
+        <div class="test-q">"</div>
+        <div class="test-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="test-txt">
+          دكتورة إيناس إنسانة قبل ما تكون دكتورة. اكتشفت حالة الدرن عندي في مرحلة مبكرة وبدأت العلاج فوراً. الحمد لله الآن بصحة تامة بفضل متابعتها.
+        </p>
+        <div class="test-author">
+          <div class="test-av"><img src="https://ui-avatars.com/api/?name=سارة+علي&background=3aacad&color=fff&size=52" alt="سارة"></div>
+          <div>
+            <div class="test-name">سارة علي</div>
+            <div class="test-role">مريضة درن — الجيزة</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-card c3 rv d3">
+        <div class="test-q">"</div>
+        <div class="test-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="test-txt">
+          أجريت منظار قصبي مع دكتورة إيناس في مستشفى الدمرداش. كانت تجربة سلسة جداً والإجراء تم بكل احترافية وأمان. أنصح كل من يحتاج تخصص الصدر بزيارتها.
+        </p>
+        <div class="test-author">
+          <div class="test-av"><img src="https://ui-avatars.com/api/?name=محمود+حسن&background=2d72bb&color=fff&size=52" alt="محمود"></div>
+          <div>
+            <div class="test-name">محمود حسن</div>
+            <div class="test-role">منظار قصبي — القاهرة</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ BOOKING ══════════════ -->
+<section class="sec-booking" id="booking">
+  <div class="wrap">
+    <div class="booking-grid">
+      <div class="booking-info rv-r">
+        <h2>احجز موعدك مع <span>د. إيناس</span></h2>
+        <p>تواصل معنا عبر الواتساب أو الهاتف لحجز موعدك بكل سهولة في مستشفى الدمرداش بالقاهرة</p>
+
+        <div class="bk-item">
+          <div class="bk-icon blue"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="bk-title">العنوان</div>
+            <div class="bk-val">مستشفى الدمرداش — القاهرة، مصر</div>
+          </div>
+        </div>
+        <div class="bk-item">
+          <div class="bk-icon blue"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <div class="bk-title">هاتف الاتصال</div>
+            <div class="bk-val"><a href="tel:+201068613266">01068613266</a></div>
+          </div>
+        </div>
+        <div class="bk-item">
+          <div class="bk-icon wa"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <div class="bk-title">واتساب</div>
+            <div class="bk-val"><a href="https://wa.me/201121334408" target="_blank">01121334408</a></div>
+          </div>
+        </div>
+        <div class="bk-item">
+          <div class="bk-icon gold"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="bk-title">مواعيد العمل</div>
+            <div class="bk-val">السبت – الخميس | من الساعة ٩ص حتى ٩م</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="qform-card rv-l">
+        <div class="qf-title"><i class="fas fa-calendar-check" style="color:var(--sky2);margin-left:8px"></i> حجز موعد سريع</div>
+        <p class="qf-sub">أملأ البيانات وسيتم التواصل معك فور الإرسال عبر الواتساب</p>
+        <form id="quickForm" autocomplete="off">
+          <div class="fg">
+            <label class="fl">الاسم الكريم <span class="req">*</span></label>
+            <input class="fi" name="name" type="text" placeholder="اكتب اسمك هنا">
+          </div>
+          <div class="fg">
+            <label class="fl">رقم الهاتف <span class="req">*</span></label>
+            <input class="fi" name="phone" type="tel" placeholder="01xxxxxxxxx">
+          </div>
+          <div class="fg">
+            <label class="fl">نوع الحالة</label>
+            <select class="fi" name="service">
+              <option value="">— اختر نوع الحالة —</option>
+              <option>الربو وحساسية الصدر</option>
+              <option>الانسداد الرئوي المزمن</option>
+              <option>الدرن والتهاب الرئة</option>
+              <option>التنظير القصبي</option>
+              <option>انقطاع التنفس أثناء النوم</option>
+              <option>التليف الرئوي</option>
+              <option>استشارة عامة</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label class="fl">ملاحظات (اختياري)</label>
+            <textarea class="fi" name="notes" rows="3" placeholder="اذكر أي تفاصيل إضافية عن حالتك..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-blue btn-full">
+            <i class="fab fa-whatsapp"></i> إرسال عبر الواتساب
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ LOCATION ══════════════ -->
+<section class="sec-loc" id="contact">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sh-eyebrow"><i class="fas fa-map-marker-alt"></i> موقعنا</div>
+      <h2>مستشفى الدمرداش — القاهرة</h2>
+      <p>نحن في خدمتك بمستشفى الدمرداش بقلب القاهرة، يسهل الوصول إلينا من كل الاتجاهات</p>
+      <div class="sh-ornament">
+        <div class="line"></div>
+        <div class="diamond"></div>
+        <div class="line r"></div>
+      </div>
+    </div>
+    <div class="loc-layout">
+      <div class="loc-cards">
+        <div class="loc-card rv d1">
+          <div class="loc-ic blue"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="loc-ct">العنوان</div>
+            <div class="loc-cv">مستشفى الدمرداش<br>القاهرة، مصر</div>
+          </div>
+        </div>
+        <div class="loc-card rv d2">
+          <div class="loc-ic green"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <div class="loc-ct">واتساب مباشر</div>
+            <div class="loc-cv"><a href="https://wa.me/201121334408">01121334408</a></div>
+          </div>
+        </div>
+        <div class="loc-card rv d3">
+          <div class="loc-ic blue"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <div class="loc-ct">هاتف الاتصال</div>
+            <div class="loc-cv"><a href="tel:+201068613266">01068613266</a></div>
+          </div>
+        </div>
+        <div class="loc-card rv d4">
+          <div class="loc-ic gold"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="loc-ct">مواعيد العمل</div>
+            <div class="loc-cv">
+              السبت – الخميس: ٩ص – ٩م<br>
+              <span style="color:var(--sky2);font-weight:700">الجمعة: إجازة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loc-map-wrap rv-l">
+        <iframe
+          src="https://maps.google.com/maps?q=مستشفى+الدمرداش+القاهرة&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          title="مستشفى الدمرداش — القاهرة"
+          allowfullscreen loading="lazy">
+        </iframe>
+        <div class="loc-map-footer">
+          <a href="https://maps.google.com/?q=مستشفى+الدمرداش,القاهرة,مصر" target="_blank" class="btn btn-blue btn-sm">
+            <i class="fas fa-map-marker-alt"></i> خرائط جوجل
+          </a>
+          <a href="https://wa.me/201121334408?text=أريد%20الاتجاهات%20للعيادة%20من%20فضلك" target="_blank" class="btn btn-wa btn-sm">
+            <i class="fab fa-whatsapp"></i> اطلب الاتجاهات
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <div class="ft-brand">
+          <div class="ft-logo"><i class="fas fa-lungs"></i></div>
+          <div>
+            <span class="ft-name">د. إيناس</span>
+            <span class="ft-spec">أمراض الصدر والجهاز التنفسي</span>
+          </div>
+        </div>
+        <p class="ft-desc">استشارية متخصصة في أمراض الصدر والجهاز التنفسي بمستشفى الدمرداش بالقاهرة. رعاية طبية متكاملة وتشخيص دقيق لكل أمراض الرئة والقصبات الهوائية.</p>
+        <div class="ft-social">
+          <a href="https://wa.me/201121334408" target="_blank" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="انستقرام"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-h">روابط سريعة</div>
+        <ul class="ft-links">
+          <li><a href="#"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+          <li><a href="#about"><i class="fas fa-chevron-left"></i> عن الدكتورة</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-left"></i> الخدمات</a></li>
+          <li><a href="#booking"><i class="fas fa-chevron-left"></i> حجز موعد</a></li>
+          <li><a href="#testimonials"><i class="fas fa-chevron-left"></i> آراء المرضى</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-h">تخصصاتنا</div>
+        <ul class="ft-links">
+          <li><a href="#services"><i class="fas fa-chevron-left"></i> الربو وحساسية الصدر</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-left"></i> الانسداد الرئوي المزمن</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-left"></i> الدرن والتهاب الرئة</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-left"></i> التنظير القصبي</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-left"></i> انقطاع التنفس النومي</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-left"></i> التليف الرئوي</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-h">تواصل معنا</div>
+        <div class="ft-ci"><i class="ic fas fa-map-marker-alt"></i><span>مستشفى الدمرداش، القاهرة، مصر</span></div>
+        <div class="ft-ci"><i class="ic fas fa-phone-alt"></i><a href="tel:+201068613266">01068613266</a></div>
+        <div class="ft-ci"><i class="ic fab fa-whatsapp"></i><a href="https://wa.me/201121334408" target="_blank">01121334408 — واتساب</a></div>
+        <div class="ft-ci"><i class="ic fas fa-clock"></i><span>السبت – الخميس | ٩ص – ٩م</span></div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© ٢٠٢٦ عيادة الدكتورة إيناس — أمراض الصدر — جميع الحقوق محفوظة</span>
+      <span>مستشفى الدمرداش — القاهرة، مصر</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floats -->
+<a href="https://wa.me/201121334408?text=مرحباً%20دكتورة%20إيناس،%20أريد%20حجز%20موعد" class="wa-float" target="_blank" rel="noopener">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<button class="btt" id="bttBtn"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+(function(){
+'use strict';
+
+/* Navbar */
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('up', scrollY > 30);
+  const b = document.getElementById('bttBtn');
+  if(b) b.classList.toggle('show', scrollY > 400);
+}, { passive: true });
+
+/* Hamburger */
+const ham = document.getElementById('hamBtn'), nbl = document.getElementById('nbLinks');
+if(ham && nbl){
+  ham.addEventListener('click', () => {
+    const o = nbl.classList.toggle('open');
+    const s = ham.querySelectorAll('span');
+    s[0].style.transform = o ? 'rotate(45deg) translate(5px,5px)' : '';
+    s[1].style.opacity   = o ? '0' : '1';
+    s[2].style.transform = o ? 'rotate(-45deg) translate(5px,-5px)' : '';
+  });
+  nbl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nbl.classList.remove('open');
+    ham.querySelectorAll('span').forEach((s,i) => { s.style.transform=''; if(i===1)s.style.opacity='1'; });
+  }));
+}
+
+/* Back to top */
+const btt = document.getElementById('bttBtn');
+if(btt) btt.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+
+/* Smooth scroll */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href'); if(id==='#') return;
+    const t  = document.querySelector(id);
+    if(t){ e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + scrollY - 78, behavior:'smooth' }); }
+  });
+});
+
+/* Scroll Reveal */
+const rvObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('show'); rvObs.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -44px 0px' });
+document.querySelectorAll('.rv,.rv-r,.rv-l,.rv-s').forEach(el => rvObs.observe(el));
+
+/* Animated Counters */
+const cObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(!e.isIntersecting) return;
+    const el = e.target, to = +el.dataset.to, sfx = el.dataset.sfx || '';
+    let cur = 0; const step = to / 85;
+    const id = setInterval(() => {
+      cur = Math.min(cur + step, to);
+      el.textContent = Math.floor(cur).toLocaleString('ar-EG') + sfx;
+      if(cur >= to) clearInterval(id);
+    }, 20);
+    cObs.unobserve(el);
+  });
+}, { threshold: .65 });
+document.querySelectorAll('[data-to]').forEach(el => cObs.observe(el));
+
+/* Toast */
+window.toast = function(msg, type){
+  const t = document.createElement('div'); t.className = 'toast-el';
+  const clr = type === 'err' ? '#d44f4f' : '#1a9952';
+  t.innerHTML = `<div style="width:34px;height:34px;border-radius:50%;background:${clr}18;color:${clr};display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0"><i class="fas ${type==='err'?'fa-times-circle':'fa-check-circle'}"></i></div><span>${msg}</span>`;
+  document.body.appendChild(t);
+  requestAnimationFrame(() => t.classList.add('show'));
+  setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 450); }, 3200);
+};
+
+/* Quick booking form */
+const qf = document.getElementById('quickForm');
+if(qf){
+  qf.addEventListener('submit', e => {
+    e.preventDefault();
+    const n = qf.querySelector('[name=name]')?.value.trim();
+    const p = qf.querySelector('[name=phone]')?.value.trim();
+    const s = qf.querySelector('[name=service]')?.value;
+    const notes = qf.querySelector('[name=notes]')?.value.trim();
+    if(!n || !p){ window.toast('يرجى ملء الاسم ورقم الهاتف', 'err'); return; }
+    let msg = `مرحباً دكتورة إيناس 🩺\nاسمي: ${n}\nرقمي: ${p}\nالحالة: ${s || 'استشارة عامة'}`;
+    if(notes) msg += `\nملاحظات: ${notes}`;
+    msg += '\nأرجو تحديد موعد. شكراً';
+    window.open('https://wa.me/201121334408?text=' + encodeURIComponent(msg), '_blank');
+    qf.reset();
+    window.toast('جاري فتح الواتساب...', 'ok');
+  });
+}
+
+})();
+</script>
+</body>
+</html>
